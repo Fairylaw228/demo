@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+</head>
+<body>
+<form>
+  <style>
+    input  {
+
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+
+      border-radius: 10px;
+      border: #ffffff;
+      margin:0 auto;
+      empty-cells:show;
+      margin:0 auto;
+      margin-left: 10% ;
+      margin-top: 9px;
+      background: black;
+    }
+
+    body {
+      font-weight: 400;
+      font-size: 15px;
+      background-image: url(https://i2.wp.com/wallpapercave.com/wp/wp6988787.png);
+    }
+
+    label {
+      position: absolute;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      margin-left: 10px;
+    }
+
+  </style>
+  <label>Первое число</label>
+  <input type="number" name="one"><br>
+
+  <label>Сложение</label>
+  <input id="+" type="radio" name="operacia" value="+"><br>
+  <label>Вычитание</label>
+  <input id="-" type="radio"  name="operacia" value="-"><br>
+  <label>Умножение</label>
+  <input id="*" type="radio"  name="operacia" value="*"><br>
+  <label>Деление</label>
+  <input id="/" type="radio"  name="operacia" value="/"><br>
+
+  <label>Второе число</label>
+  <input type="number" id="to" name="to"><br>
+
+  <input type="submit" id=buttonGET name="submit" formaction="/home" value="GET" formmethod="get" ><p>
+  <input type="submit" id="buttonPOST" formaction="/home" value="POST" formmethod="post" ><p>
+
+</form>
+
+
+</body>
+</html>
